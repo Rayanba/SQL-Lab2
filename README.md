@@ -53,7 +53,7 @@ AND salary > (
 ```
 Output:
 
-<img src="captures/3.png">
+<img src="captures/4.png">
  
 ### Q5: Choose all employees whose salaries are higher than the average for their position. (Nested Query)?
 Query:
@@ -63,9 +63,10 @@ WHERE salary > (
   SELECT AVG(salary)
   FROM employee
   GROUP BY role
-);
+)
+GROUP BY role;
 ```
 Output:
 
-<img src="captures/3.png">
+<img src="captures/5.png">
 
